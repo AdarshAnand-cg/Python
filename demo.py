@@ -1,3 +1,3 @@
 print("Hello World")
-print("Har Har Mahadev")
+print("This is the basic of python.")
 

@@ -16,9 +16,9 @@ print(type(Age),type(AGe),type(AgE))
 # A New Concept
 age=22
 aGe="22"
-int_to_string=str(age)
+Hello=str(age)
 print(age)
-print(type(int_to_string))
+print(type(Hello))
 Information="Here age is actually a integer Data type ,but we change it data type from integer to string"
 name="Tony"
 name=int(name)

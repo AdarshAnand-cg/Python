@@ -46,5 +46,5 @@ B="True"
 C=None
 d="None"
 print(type(a),type(b),type(c),type(A),type(B),type(C),type(d))
-
+g
 

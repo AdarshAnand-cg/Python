@@ -1,4 +1,4 @@
-# Task-18
+# Task-17
 a="*"
 print(a*3)
 print(a*5)

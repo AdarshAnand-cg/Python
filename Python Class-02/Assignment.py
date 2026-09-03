@@ -40,6 +40,3 @@ student_name1="Raghav"
 student_age1=19
 student_age1=20
 print(student_name1,student_age1)
- 33        6
-
-.

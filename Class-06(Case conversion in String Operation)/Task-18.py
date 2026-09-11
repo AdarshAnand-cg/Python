@@ -2,6 +2,6 @@
 a="python programming language"
 print(a.upper())
 print(a.lower())
-print(a.capitalise())
+print(a.capitalize())
 print(a.title())
 print(a.swapcase())

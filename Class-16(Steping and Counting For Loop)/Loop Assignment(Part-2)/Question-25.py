@@ -1,0 +1,1 @@
+String=input("Ente a string:")

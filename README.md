@@ -274,8 +274,8 @@ Push to GitHub
 * [x] Input / Output
 * [x] Operators
 * [x] Strings
-* [ ] Conditional Statements
-* [ ] Loops
+* [x] Conditional Statements
+* [x] Loops
 * [ ] Lists
 * [ ] Tuples
 * [ ] Sets

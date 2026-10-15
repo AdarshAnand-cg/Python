@@ -1,6 +1,6 @@
-n = int(input("How many numbers do you want to enter? "))
-for i in range(n):
-    num = int(input("Enter a number: "))
-    if num < 0:
-        break
-    print(num, end=" ")
+num=input("Enter The Number Sequence:-").split()
+for ch in num:
+    if int(ch)<0:
+        continue
+    else:
+        print(ch,end=" ")

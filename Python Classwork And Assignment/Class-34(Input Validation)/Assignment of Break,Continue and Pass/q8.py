@@ -7,7 +7,7 @@ while True:
     else:
         print("Not Found")
     sentence=input("Enter Any Sentence:-").split()
-    
 
+        
 
 

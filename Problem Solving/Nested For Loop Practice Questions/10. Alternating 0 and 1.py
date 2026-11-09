@@ -1,4 +1,4 @@
-N = 4
+N = int(input("Enter Any Number:-"))
 
 for i in range(N):
     for j in range(N):

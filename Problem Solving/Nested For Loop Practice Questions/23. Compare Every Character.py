@@ -1,5 +1,4 @@
 string=input("Enter Any String:-")
-n=0
 for i in range(len(string)):
     for j in range(len(string)):
         if string[i]==string[j]:

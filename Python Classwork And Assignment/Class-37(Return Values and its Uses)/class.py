@@ -28,7 +28,7 @@ def hello1():
     global last
     last = last.append[ None ]
     def hello2():
-        nonlocal last
+        global last
         last = last.append[ "Hello"]
         print(last())
     hello2()

@@ -1,16 +1,16 @@
-# def shadow(a,b,/,*args,**kwargs):
-#     print(type(args))
-#     print(type(kwargs))
-#     return args,a*b,a/b,kwargs
+def shadow(a,b,/,*args,**kwargs):
+    print(type(args))
+    print(type(kwargs))
+    return args,a*b,a/b,kwargs
     
-# print(shadow(729,27,15,454,555,573,q=12,c=143))
+print(shadow(729,27,15,454,555,573,q=12,c=143))
 
-# def add(a,b,c):
-#     return a+b+c
-# number= {'p':10,'q':20 ,'r':30}
-# print(add(20,45,30))
-# for i in number:
-#     print(i)
+def add(a,b,c):
+    return a+b+c
+number= {'p':10,'q':20 ,'r':30}
+print(add(20,45,30))
+for i in number:
+    print(i)
 a={'p' : 1,'q' : 2,'r' : 3}
 b={'s' : 4,'t' : 5}
 c={**a,**b}
@@ -50,9 +50,71 @@ print(calculate_area.__name__)
 
 
 def hello(a:int,b:bool,c:None) ->int:
-    print(a+b+c)
+    print(a,b,c)
 
 ads = [12,True,None]
 bds = {"a":"ada" ,"b":"rsh","c":"Anand"}
 hello(*ads)
 hello(**bds)
+
+def display(name, age, city="Unknown"):
+    print(name, age, city)
+
+args = ["Asha", 20]
+options = {"city": "Pune"}
+
+def introduce(name, city="Pune"):
+    print(name,city)
+introduce(city="Muzaffarpur Adarsh")
+
+def power(number, exponent=2):
+    """It gives the output as the exponentiation of of first Number to The Other one"""
+    return number ** exponent
+
+
+print(power(5))
+print(power(5, 3))
+
+""" 
+Start/End =>Oval
+Input/Output =>Parallelogram
+Process => Rectangle
+Condition/Decision => Diamond
+
+"""
+if a % 2 == 0:
+    pass
+else:
+    print("Odd")
+
+for i in range(1,4):
+    break
+
+string = input("What are You going to do :-")
+
+for i in string:
+    for j in string:
+        i == j
+        print(i,"Found SAme Character")
+    else:
+        print(i,"Not Found Same Character")
+
+string = input("Enter Any String: ")
+
+for i in range(len(string)):
+    count = 0
+    for k in range(i):
+        if string[i] == string[k]:
+            count = 1
+
+    if count == 0:
+        for j in range(i+1,len(string)):
+            if string[i] == string[j]:
+                if i == 0:
+                    print(string[i],end="")
+                else:
+                    print(f", {string[i]}",end="")
+                break
+
+
+

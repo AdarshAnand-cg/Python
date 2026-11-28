@@ -46,6 +46,79 @@ def gcd(a, b):
 
 print(gcd(48, 18))  # Output: 6
 
+# ____________________________________________
+# ________________Question-6__________________
+def check_prime(n, i=2):
+    if n <= 1:
+        return False
+    if i * i > n:
+        return True
+    if n % i == 0:
+        return False
+    return check_prime(n, i + 1)
+
+print(check_prime(17))  
+
+# ____________________________________________
+# ________________Question-7__________________
+def occurence_of_character(word,letter):
+    if word == "":
+        return ""
+    if word[0] != letter:
+        print(word[0],end="")
+    return occurence_of_character(word[1:],letter)
+print(occurence_of_character("mississippi","s"))
+
+
+# ____________________________________________
+# ________________Question-8__________________
+a = ""
+def change_binary(n):
+    global a
+    if n <= 0:
+        return 
+    
+    change_binary(n // 2)
+    print(n % 2,end="")
+change_binary(13)
+print()
+
+# ____________________________________________
+# ________________Question-9__________________
+result = True
+def contains_string(n):
+    global result
+    if n == "":
+        return False
+    contains_string(n[1:])
+    if 48<=ord(str(n[0]))<=57:
+        return result
+    else:
+        result = False
+    return result
+print(contains_string("1234565jjh43"))
+
+# ____________________________________________
+# ________________Question-10_________________
+a = 0
+def sum_to(n):
+    global a
+    if n < 10:
+        return n
+    a = n%10 + sum_to(n//10)
+    return a%10 + sum_to(a // 10)
+print(sum_to(9975))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
